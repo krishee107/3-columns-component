@@ -54,6 +54,7 @@ html, body {
     font-size: 15px;
     line-height: 25px;
     opacity: 0.75;
+    height: 120px;
     max-width: 212px;
 }
 .box_button {
@@ -77,4 +78,8 @@ html, body {
         margin: unset;
         width: 100%;
     }
+
+.box_text {
+    height: 100px;
+}
 }
