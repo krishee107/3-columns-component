@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    /* Colors */
+
+    /*Primary*/
+    --primary-color: hsl(31, 77%, 52%);
+    --primary-color2: hsl(184, 100%, 22%);
+    --primary-color3: hsl(179, 100%, 13%);
+    /*Neutral*/
+    --neutral-color:hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    --neutral-color2: hsl(0, 0%, 95%); /* background, headings, buttons*/
+
+    /*Typography*/
+    --fs:15px;
+    --ff1:'Lexend Deca', sans-serif;
+    --ff2:'Big Shoulders Display', cursive;
+    
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.boxes {
+    display: flex;
+    color: white;
+    font-family: var(--ff2);
+    margin: 0 auto;
+}
+
+.box{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 47px;
+}
+.box.sedans {background-color: var(--primary-color);}
+.box.suvs {background-color: var(--primary-color2);}
+.box.luxury {background-color: var(--primary-color3);}
+
+.box_title {
+    font-family: var(--ff2);
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 48px;
+}
+.box_text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    max-width: 212px;
+}
+.box_button {
+    background: var(--neutral-color2);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    max-width: 146px;
+}.box_button:hover {
+    background-color: transparent;
+    color: white !important;
+    border: solid 2px;
+}
+.sedans .box_button{color:var(--primary-color);}
+.suvs .box_button{color:var(--primary-color2);}
+.luxury .box_button{color:var(--primary-color3);}
+
+@media (max-width: 767px) {
+    .boxes{
+        flex-direction: column;
+        margin: unset;
+        width: 100%;
+    }
+}
