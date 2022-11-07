@@ -54,8 +54,9 @@ html, body {
     font-size: 15px;
     line-height: 25px;
     opacity: 0.75;
-    height: 120px;
+    height: 180px;
     max-width: 212px;
+    font-family: 'Lexend Deca';
 }
 .box_button {
     background: var(--neutral-color2);
@@ -80,6 +81,7 @@ html, body {
     }
 
 .box_text {
-    height: 100px;
+    height: 150px;
+    max-width: 300px;
 }
 }
